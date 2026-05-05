@@ -1,0 +1,94 @@
+{
+  "projects": [
+    {
+      "id": "32d72537-fef7-8067-93ff-e53422252ac7",
+      "title": "New joy",
+      "description": "New app",
+      "tech": [
+        "Computer Vision",
+        "React"
+      ],
+      "github": "http",
+      "live": "",
+      "featured": true,
+      "image": "https://prod-files-secure.s3.us-west-2.amazonaws.com/b675a06a-fbd6-471b-a138-99efecc63c17/9c08454a-fbf7-41cd-9428-98495c9cd784/C31569B1-4D70-46DB-B2C2-F037B85918DB.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466U5C5JIXJ%2F20260505%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260505T073513Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQC9efVmiW5GgW4n3xve3FluYCHeCcbW0%2BfMm4L9l3fcrwIgeLJZ%2FG7yQf6ovBlqEvxQF529OfojGV2xYxGXnEkMMKkqiAQIgP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDDSe%2FS3nCdxpZOdvMircAzBgMuITWXtLETqrWRB9QYWqEk0ffMEPDkRPQO5cmbCcrFIyZcCNv5lhx9xN%2F%2BoQMTN7bbl2FSDjlfZR%2F6hYGZxLsajkS1SysLSxtOA%2BtMYzFNVMIAsPLadl6LPMpcESQEwRwuCF4elsKR8PoX41drEe78zkXWaKm%2FDuhgZ7G17mtaKcxtYJonM9J46itr5ToJ6nJVK1s7Ex73pFT%2BDi%2FHhbfdRrWQHpJhJe3Pxk83Vr2aDMp%2BNGpScGx8%2FttUAVQh01z5PPlqoNnN4HWnzEZqFzMWnaf%2FKvJhXbLY6FcOr%2FjGMmHlB7fLWy8lgn8b4%2FBzUwNv96Z9RV2oFiyMilxbgZVASQb91mS2sEmuoYsCBG1Lz47UboMY%2B1OLbLeHqwySoMlU2MPvQ9luHkqBdH8K1bvNap2lBbFJ60xHFyZ53vOmBM%2FJaajaEWW5hL%2BjtgA93%2B16YZ7i%2BF5MUYKq4Eu0TKvEk8YnUJt8SWPy6V5rmM1xoKk10QNmbwGnZe5AU31VNI8pSnLYbt47TXecgH1%2FbJNv5NivVoK%2F5fefXeV8VXdsNTPRGUbexv1%2FkbMfXglvpUlKU9oIsjflvNzD18C8%2BOuXHhPBv5I7xy%2FKmEYr2eepuqwz5MZpmxOCkWMMOl5s8GOqUBTnDKkBX%2BXfC%2BPBF382J2xKhdj4vR7KBGGWpyQeS%2BehiGL6hi%2FhL2GLWqcT3BhCg1%2FLQUFjS0qB7wvx7v209mGHS59lPH%2FMaYNBj7efku5AYmSbnyLNR6aBDyn1lQeeImJRp7HC%2FifdG1GhLGfWQ9zS%2BZFvNDcwXVIrbEY3tK%2B65BFidOc4m9PqLSOL3ox8%2BE7ojtWoxIZb15QM8IKilHuxLpxL6y&X-Amz-Signature=71de93b2025937ffc36e9ae65916c142d3ff3d43d76a5714e2e9849dd5ba4868&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject"
+    },
+    {
+      "id": "32d72537-fef7-81b4-ab19-cbd0e6727b9f",
+      "title": "Rice Blast Weather Analysis",
+      "description": "Breathing new life into an organic market",
+      "tech": [
+        "Machine Learning",
+        "Weather API"
+      ],
+      "github": "",
+      "live": "",
+      "featured": true,
+      "image": "https://framerusercontent.com/images/veuEX7EWKH8st7lAt2LmNetkvFU.png?width=1376&height=768"
+    },
+    {
+      "id": "32d72537-fef7-81d8-8969-f61a92cc73c5",
+      "title": "JOY POST",
+      "description": "You cook We post",
+      "tech": [
+        "React Native",
+        "Cloud"
+      ],
+      "github": "",
+      "live": "",
+      "featured": false,
+      "image": "https://framerusercontent.com/images/MJbZW81lC3ekTVgYP7V6GReLd3A.png?width=1408&height=768"
+    },
+    {
+      "id": "32d72537-fef7-81fb-aaff-f9ef7313413a",
+      "title": "Vibe Script",
+      "description": "2-Minute Scripts for Busy Creators",
+      "tech": [
+        "AI",
+        "React",
+        "Node.js"
+      ],
+      "github": "",
+      "live": "",
+      "featured": false,
+      "image": "https://framerusercontent.com/images/i3mDpWhFu7tEOL0xWnjl8eeXis.png?width=1070&height=736"
+    },
+    {
+      "id": "32d72537-fef7-81ff-81d5-e737e115eee4",
+      "title": "Rice Blast - Image Analysis",
+      "description": "Designing the future of sustainable agriculture with Image based analysis and smart farming",
+      "tech": [
+        "Python",
+        "Computer Vision",
+        "React"
+      ],
+      "github": "",
+      "live": "",
+      "featured": true,
+      "image": "https://framerusercontent.com/images/WEdUzezFqC4J9tdglBttno1HIE.png?width=1376&height=768"
+    }
+  ],
+  "siteContent": {
+    "project manager": "",
+    "New AI App": "\n1. Text: Write the description of your project.\n2. Tech: Add tags for the tech stack (e.g., React, Node.js, Python).\n3. Github: Paste the link to your GitHub repository (optional).\n4. Live: Paste the link to your live demo/website (optional).\n5. Image: Upload an image or paste an image link.\n6. Featured: Check the box ☑ if you want it to appear on your homepage.",
+    "contact_tagline_1": "Let's create something meaningful together.",
+    "footer_copyright": "© 2025 SHAS-LAB. ALL RIGHTS RESERVED.",
+    "info_background": "Originally from India, I've been designing solutions for startups and creative founders.",
+    "contact_tagline_2": "I'd love to hear about your project, big or small.",
+    "info_approach": "I believe good design starts with empathy. I ask questions, listen closely, and build brand solutions that feel as good as they look, honest, beautiful, and built to last.",
+    "footer_linkedin": "https://www.linkedin.com/in/shashank-p-044a7b288/",
+    "hero_subtitle": "AI ENG - CREATOR - PRODUCT DEV",
+    "info_what_i_do": "I help brands find clarity and express it through strong, thoughtful design with reliable AI based Solutions.",
+    "footer_headline": "GET IN TOUCH",
+    "contact_phone": "+91 7338970698",
+    "contact_email": "shashank1341@gmail.com",
+    "footer_email": "shashank1341@gmail.com",
+    "footer_github": "https://github.com/shaasank",
+    "info_career": "(2025 - NOW) AI ENGINEER",
+    "site_name": "SHAS-LAB©",
+    "footer_medium": "https://medium.com/@shas21ad303",
+    "contact_headline": "CONTACT",
+    "hero_name": "SHASHANK"
+  },
+  "lastUpdated": "2026-05-05T07:35:15.190Z"
+}

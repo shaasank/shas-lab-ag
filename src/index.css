@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+    --background: 0 0% 4%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 6%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 6%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 4%;
+
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 0 0% 98%;
+
+    --radius: 0rem;
+
+    /* Custom tokens */
+    --nav-height: 60px;
+    --container-padding: 1rem;
+    --section-gap: 6rem;
+
+    /* Agency accent colors */
+    --color-info: #2563eb;
+    --color-info-hover: #1d4ed8;
+    --color-success: #10b981;
+    --color-warning: #f59e0b;
+    --color-danger: #ef4444;
+
+    /* Agency surface colors */
+    --color-card: rgba(17, 17, 17, 0.5);
+    --color-card-border: rgba(255,255,255,0.08);
+    --color-card-hover-border: rgba(255,255,255,0.16);
+    --color-surface-secondary: rgba(13, 13, 13, 0.2);
+  }
+
+  .dark {
+    --background: 0 0% 4%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 6%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 6%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 4%;
+
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 0 0% 98%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  section {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  
+  .bg-background {
+    background-color: rgba(5, 5, 5, 0.3) !important;
+  }
+  .page-container {
+    @apply max-w-[1400px] mx-auto px-4 md:px-8;
+  }
+
+  .hero-title {
+    font-size: clamp(3rem, 15vw, 12rem);
+    line-height: 0.85;
+    letter-spacing: -0.02em;
+    @apply font-bold;
+  }
+
+  .hero-subtitle {
+    @apply text-sm md:text-base tracking-[0.2em] uppercase text-muted-foreground;
+  }
+
+  .section-title {
+    @apply text-xs uppercase tracking-[0.15em] text-muted-foreground mb-8;
+  }
+
+  .nav-link {
+    @apply text-sm tracking-wide text-muted-foreground hover:text-foreground transition-colors duration-300;
+  }
+
+  .nav-link-active {
+    @apply text-foreground;
+  }
+
+  .work-card {
+    @apply relative overflow-hidden cursor-pointer;
+  }
+
+  .work-card-image {
+    @apply w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105;
+  }
+
+  .work-card-overlay {
+    @apply absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500;
+  }
+
+  .work-card-content {
+    @apply absolute bottom-0 left-0 right-0 p-6 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500;
+  }
+
+  .info-grid {
+    @apply grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12;
+  }
+
+  .info-block {
+    @apply space-y-4;
+  }
+
+  .info-label {
+    @apply text-xs uppercase tracking-[0.15em] text-muted-foreground;
+  }
+
+  .info-text {
+    @apply text-sm leading-relaxed text-foreground/80;
+  }
+
+  .career-badge {
+    @apply inline-block px-4 py-2 text-xs uppercase tracking-[0.15em] border border-border rounded-full;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  .animate-fade-in-delay-1 {
+    animation: fadeIn 0.8s ease-out 0.2s forwards;
+    opacity: 0;
+  }
+
+  .animate-fade-in-delay-2 {
+    animation: fadeIn 0.8s ease-out 0.4s forwards;
+    opacity: 0;
+  }
+
+  .animate-fade-in-delay-3 {
+    animation: fadeIn 0.8s ease-out 0.6s forwards;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-20px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* ── Agency Components ──────────────────────────────────────────── */
+
+@layer components {
+  .agency-card {
+    background: var(--color-card);
+    border: 0.5px solid var(--color-card-border);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+  }
+  .agency-card:hover {
+    border-color: rgba(37, 99, 235, 0.4);
+    background: rgba(255, 255, 255, 0.04);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(37, 99, 235, 0.1);
+  }
+  .agency-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.03), transparent);
+    transform: skewX(-20deg);
+    transition: 0.7s;
+  }
+  .agency-card:hover::after {
+    left: 150%;
+  }
+
+  .agency-badge {
+    @apply inline-block px-3 py-1 text-[11px] uppercase tracking-[0.06em] font-medium rounded-sm;
+  }
+
+  .badge-agritech  { background: rgba(16,185,129,0.15); color: #10b981; }
+  .badge-d2c       { background: rgba(245,158,11,0.15); color: #f59e0b; }
+  .badge-climate   { background: rgba(37,99,235,0.15);  color: #60a5fa; }
+  .badge-ai        { background: rgba(139,92,246,0.15); color: #a78bfa; }
+  .badge-saas      { background: rgba(236,72,153,0.15); color: #f472b6; }
+  .badge-strategy  { background: rgba(37,99,235,0.15);  color: #60a5fa; }
+  .badge-product   { background: rgba(16,185,129,0.15); color: #10b981; }
+  .badge-founder   { background: rgba(245,158,11,0.15); color: #f59e0b; }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 h-11 text-sm font-medium tracking-wide rounded-sm transition-all duration-200;
+    background: var(--color-info);
+    color: #fff;
+  }
+  .btn-primary:hover {
+    background: var(--color-info-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(37, 99, 235, 0.4);
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 px-6 h-11 text-sm font-medium tracking-wide rounded-sm border transition-all duration-200;
+    border-color: rgba(255,255,255,0.25);
+    color: #fff;
+    background: transparent;
+  }
+  .btn-outline:hover {
+    border-color: rgba(255,255,255,0.8);
+    transform: translateY(-2px);
+    background: rgba(255,255,255,0.05);
+    box-shadow: 0 0 15px rgba(255,255,255,0.1);
+  }
+
+  .section-heading {
+    @apply text-[11px] uppercase tracking-[0.15em] text-white/40 mb-3;
+  }
+
+  .section-title-lg {
+    @apply text-3xl md:text-4xl font-semibold tracking-tight text-white;
+  }
+
+  .section-subtitle {
+    @apply text-base md:text-lg text-white/50 mt-3 leading-relaxed;
+  }
+
+  .stat-value {
+    @apply text-3xl md:text-4xl font-bold tracking-tight text-white;
+  }
+
+  .stat-label {
+    @apply text-xs uppercase tracking-[0.12em] text-white/40 mt-1;
+  }
+
+  .check-item {
+    @apply flex items-start gap-2.5 text-sm text-white/70 leading-relaxed;
+  }
+
+  .check-icon {
+    @apply text-[var(--color-success)] mt-0.5 shrink-0;
+  }
+
+  .process-connector {
+    @apply hidden lg:block absolute top-10 left-[calc(25%+1rem)] right-[calc(25%+1rem)] h-px bg-white/10 z-0;
+  }
+  
+  /* Background subtle gradient animation */
+  body {
+    background: linear-gradient(-45deg, #020617, #0f172a, #000000, #020617);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+  }
+  
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+}

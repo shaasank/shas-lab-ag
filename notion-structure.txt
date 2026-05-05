@@ -1,0 +1,6 @@
+Keys on notion:
+blocks, databases, dataSources, pages, users, comments, fileUploads, views, search, oauth
+
+Keys on notion.databases:
+retrieve, create, update
+
