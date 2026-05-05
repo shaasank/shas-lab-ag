@@ -581,11 +581,11 @@ const fallbackWorks: Work[] = [
   },
 ];
 
-const notionWorks = ((notionData as any).projects ?? []) as Work[];
+const notionWorks = ((notionData as unknown as { projects?: Work[] }).projects ?? []);
 const hasRealProjects = notionWorks.some((w) => w.title && w.title !== "Untitled");
 export const works: Work[] = hasRealProjects ? notionWorks : fallbackWorks;
 
-const notionContent = ((notionData as any).siteContent ?? {}) as Record<string, string>;
+const notionContent = ((notionData as unknown as { siteContent?: Record<string, string> }).siteContent ?? {});
 export const siteContent: SiteContent = { ...defaultContent, ...notionContent };
 
-export const lastUpdated: string = (notionData as any).lastUpdated ?? "";
+export const lastUpdated: string = (notionData as unknown as { lastUpdated?: string }).lastUpdated ?? "";
